@@ -1,0 +1,43 @@
+/* @import url(/CSS/variables.css); */
+/* @import url(/CSS/navbar.css); */
+
+.registrationSection{
+    padding: 100px;
+    background-color: var(--white-color);
+    border-radius: 30px;
+}
+
+
+.checkPincode{
+    position: relative;
+}
+
+.available-text{
+    color: #1bb100;
+    font-size: 12px;
+    position: absolute;
+    font-family: var(--secondary-font);
+    right: 28px;
+    bottom: 11px;
+}
+.Notavailable-text{
+    color: #d40000;
+    font-size: 12px;
+    position: absolute;
+    font-family: var(--secondary-font);
+    right: 16px;
+    bottom: 11px;
+    display: none;
+}
+
+.section-contact-info{
+    background-color: #FFC86E;
+    padding: 48px 164px;
+    border-radius: 30px;
+    position: relative;
+    top: -42px;
+}
+
+.blogView{
+    background-color: var(--bg-color) !important;
+}

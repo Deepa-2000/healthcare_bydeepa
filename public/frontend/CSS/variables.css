@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Faculty+Glyphic&display=swap');
+:root {
+    scroll-behavior: smooth;
+    --black-color: #1d1615;
+    --bg-color: #f1ebe6;
+    --light-yellow: #f5e9d6;
+    --white-color: #fff;
+    --text-color: #444444;
+    --gradient-color: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 229, 178, 1) 88%,
+        rgba(255, 212, 124, 1) 100%
+    );
+    --secondary-font: "DM Sans", sans-serif;
+}
+/* 
+@font-face {
+    font-family: "New kansas Regular";
+    src: url(/public/fonts/NewKansasRegular.otf);
+    font-family: "Avenir Next Regular";
+    src: url(/public/fonts/avenir-next-regular.ttf);
+    font-family: "Faculty Glyphic";
+    src: url(/public/fonts/NewKansasMedium.otf);
+    font-family: "New kansas Semibold";
+    src: url(/public/fonts/NewKansasSemiBold.otf);
+    font-family: "New kansas Bold";
+    src: url(/public/fonts/NewKansasBold.otf);
+    font-family: "AvenirNext Bold";
+    src: url(/public/fonts/AvenirNext-Bold.otf);
+} */
+
+.NewKansas-regular {
+    font-family: "Faculty Glyphic";
+    font-weight: 400;
+    font-style: normal;
+}
+.AvenirNext-regular {
+    font-family: "AvenirNext Regular";
+    font-weight: 400;
+    font-style: normal;
+}
+
+.NewKansas-medium {
+    font-family: "Faculty Glyphic";
+    font-weight: 500;
+    font-style: normal;
+}
+
+.NewKansas-semibold {
+    font-family: "Faculty Glyphic";
+    font-weight: 600;
+    font-style: normal;
+}
+
+.NewKansas-bold {
+    font-family: "Faculty Glyphic";
+    font-weight: 700;
+    font-style: normal;
+}
+/* .AvenirNext-bold {
+    font-family: 'AvenirNext Bold';
+    font-weight: 700;
+    font-style: normal;
+} */
+
+/* Butons */
+
+.bg-color {
+    background-color: var(--bg-color);
+}
+.scrollToTopBtn {
+    position: fixed;
+    /* border: 1px solid var(--light-yellow); */
+    bottom: 2rem;
+    right: 24px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    font-size: 24px;
+    aspect-ratio: 1;
+    border-radius: 32px;
+    opacity: 0;
+    z-index: 24;
+    animation: showButton linear forwards;
+    animation-timeline: view();
+    /*animation-range-start: calc(80vh + var(--animationStartsAfter));*/
+    animation-range-start: 80vh;
+    animation-range-end: calc(
+        80vh + var(--animationStartsAfter) + var(--animationDistance)
+    );
+
+    & > span {
+        font-weight: bold;
+        font-size: 2rem;
+    }
+}
+
+@keyframes showButton {
+    from {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.ctaBtn{
+    width: 238px;
+    color: var(--white-color);
+    position: fixed;
+    right: 82px;
+    background-color: var(--black-color);
+    /* background: var(--gradient-color); */
+    border-radius: 32px;
+    bottom: 2rem;
+    font-size: 16px;
+    font-weight: 500;
+    display: grid;
+    place-items: center;
+    z-index: 24;
+    box-shadow: 0px 0px 16px #00000015;
+    height: 48px;
+    font-family: var(--secondary-font);
+}
+.primary-btn {
+    padding: 10px 32px;
+    width: fit-content;
+    font-size: 16px;
+    font-family: var(--secondary-font);
+    font-weight: normal !important;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    cursor: pointer;
+    transition: all ease 0.3s;
+    border-radius: 5px;
+}
+.primary-btn:hover {
+    box-shadow: 0px 4px 10px #00000028;
+    color: var(--white-color);
+}
+
+.gradient-btn {
+    padding: 10px 32px !important;
+    width: fit-content;
+    font-size: 16px;
+    font-family: var(--secondary-font) !important;
+    font-weight: normal !important;
+    color: var(--black-color);
+    background-color: var(--light-yellow);
+    cursor: pointer;
+    transition: all ease 0.3s;
+    border-radius: 5px;
+}
+.gradient-btn:hover {
+    box-shadow: 0px 4px 10px #00000028;
+    border: 1px solid var(--light-yellow);
+    color: var(--light-yellow);
+    background-color: transparent;
+}
+
+.wrapper {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.text-color {
+    color: var(--text-color) !important;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+h1 {
+    font-size: 36px;
+    font-family: "Faculty Glyphic";
+}
+
+h2 {
+    font-size: 28px;
+    font-family: "Faculty Glyphic";
+    line-height: 45px;
+}
+
+h4 {
+    font-size: 18px;
+    font-family: "Faculty Glyphic";
+}
+
+p {
+    font-size: 16px;
+    font-family: var(--secondary-font) !important;
+}
+
+.m-100 {
+    margin-top: 100px;
+}
+
+/* form */
+
+.form-control {
+    height: 41px;
+    width: 100%;
+    padding: 9px;
+    border-radius: 10px;
+    color: var(--black-color);
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    border: 1px solid #dfd8d8;
+}
+
+.form-control::placeholder {
+    color: #999999 !important;
+    font-size: 14px;
+}
+
+.form-label {
+    color: var(--text-color);
+    font-family: var(--secondary-font);
+}
+
+/* navbar */
+
+.nav-header {
+    position: relative;
+    z-index: 23;
+}
+
+.navbar {
+    padding: 20px 40px !important;
+    border-radius: 0px 0px 20px 20px;
+    font-family: var(--secondary-font);
+}
+
+.navbar .navbar-nav {
+    column-gap: 20px;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+    border-bottom: 1px solid transparent;
+    transition: all ease-in 0.3s;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+    border-bottom: 1px solid var(--black-color);
+}
+
+/* footer */
+footer {
+    padding: 34px 0px;
+    font-family: var(--secondary-font);
+    background-color: var(--white-color) !important;
+}
+
+.primary-line-btn {
+    padding: 10px 32px;
+    width: fit-content;
+    font-size: 16px;
+    font-family: var(--secondary-font);
+    font-weight: normal !important;
+    color: var(--black-color);
+    background-color: transparent;
+    border: 1px solid var(--black-color) !important;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    border-radius: 5px;
+}
+.primary-line-btn:hover {
+    box-shadow: 0px 4px 10px #00000028;
+}
+
+.mob_menu {
+    display: none;
+    padding: 24px 32px;
+    background-color: var(--white-color);
+    border-radius: 0px 0px 20px 20px;
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    position: relative;
+    z-index: 24;
+}
+
+.mob_menu .logo {
+    position: fixed;
+    width: 84px;
+    top: 0;
+}
+.mob_nav .nav-item .nav-link {
+    color: var(--text-color);
+    font-size: 16px;
+    border-bottom: 1px solid transparent;
+    transition: all ease-in 0.3s;
+}
+.mob_nav .nav-item .nav-link:hover {
+    color: var(--black-color);
+    font-size: 16px;
+    border-color: var(--black-color);
+}
+
+.accordion-button {
+    line-height: normal !important;
+}
+.faqSection {
+    margin-top: 142px;
+}

@@ -1,0 +1,64 @@
+.page-title-section{
+    z-index: 2;
+    position: relative;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 16px;
+    color: var(--white-color);
+    font-family: var(--secondary-font);
+}
+
+.uspCard{
+    background-color: var(--bg-color);
+    padding: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid var(--bg-color);
+    height: 308px;
+    transition: all ease 0.5s;
+}
+.uspCard img{
+    width: 100%;
+    max-width: 100% !important;
+}
+.uspCard:hover{
+    box-shadow: 0px 0px 24px #28282815;
+}
+
+.teamCard{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.teamCardSub{
+    padding: 24px;
+    background-color: #FFC86E;
+    height: 324px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.legacy{
+    margin-bottom: 42px !important;
+}
+.legacy-card{
+    background-color: var(--white-color);
+    border-radius: 20px;
+    padding: 40px 70px;
+    margin-bottom: 24px;
+    border: none;
+    box-shadow: 0px 4px 12px #0000000d;
+}
+
+.mki{
+    /*background-color: var(--white-color);*/
+    /*background-image: url('/public/frontend/images/mki-bg.png');*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

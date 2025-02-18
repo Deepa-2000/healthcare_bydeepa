@@ -1,0 +1,30 @@
+@import url(designSystem.css);
+.info-tabs{
+    padding: 16px;
+    display: flex;
+    row-gap: 16px;
+    column-gap: 16px;
+}
+
+.info-tabs a{
+    width: 100%; }
+
+.info-card{
+    height: auto;
+    width: 100%;
+    padding: 16px;
+    border-radius: 6px;
+    background-color: var(--white);
+    border: 1px solid var(--dark-light);
+    transition: all ease-in 0.3s;
+}
+
+.info-card:hover{
+    box-shadow: var(--shadow);
+}
+
+
+.info-card img{
+    max-width: 50px;
+    margin-bottom: 12px;
+}

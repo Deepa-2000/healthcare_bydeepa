@@ -1,0 +1,52 @@
+.faqSection{
+    margin-top: 84px;
+}
+
+.faqSection-header .nav-pills .nav-link{
+    width: 320px;
+    padding: 16px 42px;
+    border-radius: 5px;
+    text-align: left !important;
+    background-color: transparent;
+    color: var(--black-color);
+    font-family: var(--secondary-font);
+    font-size: 16px;
+    transition: all ease 0.3s;
+    margin-right: 32px;
+}
+
+.faqSection-header .nav-pills .nav-link:hover{
+    background-color: var(--white-color);
+}   
+
+.faqSection-header .nav-pills .nav-link.active{
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+.tab-content{
+    width: 100%;
+}
+.faq-select-mob{
+    display: none;
+}
+
+/* FAQ Responsive */
+
+@media only screen and (max-width: 768px) {
+    .faq-select-mob{
+        display: block;
+        height: 50px;
+        border: 0px;
+        font-family: var(--secondary-font);
+        padding: 0px 32px;
+        color: var(--black-color);
+        margin-bottom: 24px;
+    }
+    .faqSection{
+        margin-top: 92px;
+    }
+    .faqSection-header .nav{
+        display: none;
+    }
+}

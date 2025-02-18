@@ -1,0 +1,416 @@
+/* @import url(/CSS/font.css);
+@import url(/CSS/variables.css);
+@import url(/CSS/navbar.css); */
+/* index page */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    background-color: var(--bg-color);
+}
+
+.main .header-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+.main .homeBanner{
+    height: 100vh;
+}
+
+.hero {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    z-index: 1;
+}
+
+.hero .hero-content {
+    width: 512px;
+    margin-right: 24px;
+    margin-top: 64px;
+}
+
+.request_call {
+    background-color: var(--white-color);
+}
+
+.request_call .content {
+    padding-top: 60px;
+}
+
+.request-form {
+    padding: 12px;
+    background-image: url('../images/call-right-img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    font-family: var(--secondary-font);
+}
+
+.request-form .nav-pills {
+    border-bottom: 1px solid var(--bg-color);
+}
+
+.request-form .nav-pills .nav-item {
+    width: 50%;
+}
+
+.request-form .nav-pills .nav-item .active {
+    border-bottom: 4px solid var(--bg-color) !important;
+    border-radius: 0px;
+}
+
+.request-form .nav-pills .nav-item .nav-link {
+    width: 100%;
+    background-color: transparent;
+    color: var(--white-color);
+    border: 0px;
+}
+
+.modal-dialog {
+    width: 650px !important;
+}
+
+.modal-dialog .modal-content {
+    border-radius: 20px !important;
+    padding: 16px;
+}
+
+.product-collection .nav-pills {
+    justify-content: center;
+    font-family: var(--secondary-font);
+    border-bottom: 1px solid var(--black-color);
+}
+
+.product-collection .nav-pills .nav-item .nav-link{
+    padding: 12px 74px;
+    border-radius: 0px;
+    background-color: transparent;
+    color: var(--black-color);
+}
+.product-collection .nav-pills .nav-item .active{
+    border-bottom: 5px solid var(--black-color);
+}
+
+.product-card{
+    background-color: var(--bg-color);
+    border-radius: 22px;
+    border: 0px;
+    min-height: 442px;
+    height: auto;
+    font-size: 14px;
+}
+.product-card img{
+    border-radius: 22px;
+    border: 0px;
+}
+
+/* FAQ */
+.accordion-item{
+    border-radius: 8px !important;
+}
+.accordion-button{
+    background-color: var(--white-color) !important;
+    border-radius: 8px !important;
+}
+.accordion-item .accordion-body{
+    font-family: var(--secondary-font);
+}
+
+/* DIY section */
+
+.diyProducts{
+    background-color: var(--white-color);
+}
+
+/* our story section */
+
+.ourstory .storycard{
+padding: 50px 70px;
+border: none;
+border-radius: 20px;
+width: 100%;
+position: relative;
+right: 64px;
+}
+
+/* testimoanial section */
+
+.testimonial{
+    background-color: var(--black-color);
+    background-image: url('/public/frontend/images/testimonial-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.testimonial p{
+    font-size:14px;
+}
+.CTABanner{
+    background-color: #FFC86E;
+    /*background-image: url('../images/ctabg.png');*/
+    border-radius: 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    min-height: 252px;
+    padding: 0px 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.testimonial-card{
+    max-width: 100%;
+    padding: 32px 42px;
+    border: none;
+    border-radius: 20px;
+}
+
+/* order process */
+
+.order-process{
+    border-radius: 20px;
+    background-color: var(--white-color);
+    line-height: normal;
+}
+.order-process .accordion-button{
+    line-height: normal;
+}
+.order-process .accordion .active{
+    background-color: var(--light-yellow);
+    transition: all ease 0.5s;
+    box-shadow: none !important;
+    border-bottom: none !important;
+}
+.order-process .accordion .active .active-header{
+    background-color: var(--light-yellow) !important;
+    border-radius: 20px;
+    border: none;
+    line-height: normal;
+    box-shadow: none !important;
+    transition: all ease 0.5s;
+}
+
+.pointer{
+    background-color: var(--bg-color);
+    color: var(--black-color);
+    padding: 5px 22px;
+    margin-right: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    transition: all ease 0.5s;
+}
+.accordion-item.active .accordion-button.active-header .pointer {
+    background-color: #fff; /* New background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+}
+
+.accordion-collapse {
+    transition-duration: 0.5s !important; /* Adjust the speed (default is 0.35s) */
+}
+
+.services .services-tab{
+    margin-top: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    row-gap: 12px;
+}
+.services-tab a {
+    font-size: 22px;
+    position: relative;
+    display: inline-block;
+    padding-left: 25px; /* Space for the arrow */
+    text-decoration: none;
+    color: #000; /* Customize the link color */
+    transition: color 0.3s ease;
+}
+
+.services-tab .active {
+    color: #007bff; /* Change color on hover */
+}
+
+.services-tab .active::before {
+    content: "→"; /* Arrow symbol */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the arrow */
+    opacity: 0;
+    transition: opacity 0.3s ease, left 0.3s ease;
+    color: #007bff; /* Arrow color */
+}
+
+.services-tab .active::before {
+    opacity: 1;
+    left: -10px; /* Move the arrow slightly to the left on hover */
+}
+
+.page-title-section{
+    z-index: 24;
+    position: relative;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 16px;
+    color: var(--white-color);
+    font-family: var(--secondary-font);
+}
+
+.requried{
+    color: red;
+}
+
+.cab-usp{
+    padding: 24px;
+}
+
+.qrImage{
+    background-color: var(--white-color);
+    padding: 16px;
+    width: fit-content;
+    border-radius: 7px;
+    display: flex;
+    margin-top: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.qrImage img{
+    width: 120px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.error{
+    font-size: 12px;
+    color: #ff3e3e;
+    font-family: var(--secondary-font);
+}
+
+.iti{
+    height: 41px !important;
+    width: 100%;
+}
+
+#ZipCodeInput-error{
+    transition: all ease 0.5s;
+}
+
+.nav-link.active {
+    font-weight: 500;
+    color: var(--black-color); /* Example color */
+}
+.blog-tag{
+    font-family: var(--secondary-font);
+    margin-bottom: 8px;
+    display: block;
+    font-size: 12px;
+    color: #808080;
+    padding: 2px 8px;
+    border-radius: 20px;
+    background-color: var(--bg-color);
+    width: fit-content;
+}
+
+.readMorebtn{
+    font-family: var(--secondary-font);
+    border-bottom: 1px solid transparent;
+    display: block;
+    width: fit-content;
+    background-color: transparent;
+    color: var(--black-color);
+    margin-top: 16px;
+    font-size: 16px;
+    padding-bottom: 4px;
+    transition: all ease 0.5s;
+}
+
+.readMorebtn:hover{
+    border-bottom: 1px solid var(--black-color);
+    transition: all ease 0.5s;
+}
+
+/* Blog CSS */
+
+.topBlogs{
+    margin-top: 142px;
+}
+
+.verticalBlogCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+    align-items: center;
+}
+
+.verticalBlogCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+    align-items: center;
+}
+
+.blogInfo{
+    background-color: var(--white-color);
+    padding: 32px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.verticalBlogCard .blogInfo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.shiftLeft{
+    position: relative;
+    left: 124px;
+}
+.shiftRight{
+    position: relative;
+    right: 124px;
+}
+
+.blogCard{
+    transition: all ease 0.5s;
+    background-color: var(--white-color);
+    cursor: pointer;
+}
+
+.blogCard:hover{
+    transform:translateY(-10px);
+    background-color: var(--bg-color) !important;
+    transition: all ease 0.5s;
+}

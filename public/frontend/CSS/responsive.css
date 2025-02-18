@@ -1,0 +1,210 @@
+@media only screen and (max-width: 1200px) {
+    .navbar{
+        padding: 16px !important;
+    }
+    .navbar .navbar-nav .nav-item .nav-link{
+        font-size: 14px;
+    }
+    .primary-line-btn{
+        padding: 8px 16px !important;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .product-collection .nav-pills .nav-item .nav-link {
+        padding: 12px 32px;
+    }
+
+    .product-card {
+        height: 464px;
+    }
+
+    .order-process .row,
+    .ourstory .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .order-process .row .col-md-6,
+    .ourstory .row .col-md-6 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .ourstory .storycard {
+        position: relative;
+        right: 0;
+        margin-top: 32px;
+    }
+    .desktop_menu{
+        display: none  !important;
+    }
+    .mob_menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        box-shadow: 0px 4px 16px #0000001a; 
+    }
+
+    .page-title-section{
+        margin-top: 140px !important;
+    }
+    .hero{
+        align-items: center;
+    }
+    .uspCard{
+        justify-content: start !important;
+        padding: 16px !important;
+        height: 266px !important;
+    }
+    .uspCard{
+        height: 314px !important;
+    }
+    .uspCard img{
+        max-width: 32px;
+    }
+    .registrationSection{
+        padding: 64px !important;
+    }
+    .contact-info{
+        padding: 64px !important;
+    }
+    .contact-info .row .col-md-6{
+        justify-content: flex-start !important;
+    }
+    .section-contact-info{
+        padding: 52px;
+    }
+    .section-contact-info .row{
+        flex-direction: column;
+        width: 100%;
+        align-items: start;
+    }
+    .section-contact-info .row .col-md-6{
+        width: 100% !important;
+        justify-content: start !important;
+        align-items: start;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .product-card {
+        height: auto;
+        margin-bottom: 16px;
+    }
+
+    .CTABanner{
+        padding: 32px;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        min-height: auto !important;
+    }
+    .CTABanner>div{
+        width: 100% !important;
+    }
+    .faq .container .w-75 {
+        width: 100% !important;
+    }
+    .uspCard{
+        height: auto !important;
+    }
+    .uspCard img{
+        max-width: 52px;
+    }
+    .m-para{
+        font-size: 14px;
+        margin-top: 12px;
+    }
+    .product-collection .nav-pills .nav-item .nav-link{
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .hero .hero-content {
+        margin-top: 42px;
+        margin-right: 0px;
+        width: 100%;
+    }
+    .main .homeBanner{
+        display: none;
+    }
+    .request_call .content {
+        padding-top: 0px;
+    }
+
+    .registrationSection{
+        padding: 24px !important;
+    }
+    .wrapper {
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
+
+    .services .services-tab {
+        padding: 0px 12px;
+        margin-bottom: 16px;
+    }
+    .ourstory .storycard{
+        padding: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-collection .nav-pills{
+        justify-content: start;
+    }
+    .product-collection .nav-pills .nav-item .nav-link{
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .footerTop .row .col-md-6{
+        justify-content: start;
+        align-items: start !important;
+    }
+
+    .nav-link-row .navbar .navbar-nav{
+        column-gap: 16px !important;
+    }
+
+    .nav-link-row .navbar .navbar-nav .nav-item .nav-link{
+        font-size: 14px;
+    }
+
+    .footer-content{
+        width: 100% !important;
+    }
+    .legacy-card{
+        padding: 24px;
+    }
+    .legacy-card p{
+        margin: 0 !important;
+    }
+    .contactForm{
+        padding: 32px 0px !important;
+    }
+    .contact-info{
+        padding: 16px !important;
+        top: 18px;
+
+    }
+    .form-bottom-info{
+        font-size: 16px !important;
+    }
+
+    .contact{
+        margin-top: 118px;
+    }
+
+    .section-contact-info{
+        top: 32px !important;
+        margin-bottom: 32px;
+    }
+
+}

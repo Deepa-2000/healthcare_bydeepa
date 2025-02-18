@@ -1,0 +1,17 @@
+@import url(designSystem.css);
+/* Login */
+
+.loginScreen{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.logo{
+    margin-bottom: 34px;
+    max-width: 180px;
+}
+
+
+.login-section{
+    width: 350px;
+}
